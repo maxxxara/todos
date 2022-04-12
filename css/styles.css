@@ -1,0 +1,132 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #181824;
+	font-family: "Poppins";
+}
+body *{
+	font-family: "Poppins";
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.container {
+	width: 600px;
+	margin: 0 auto;
+}
+@media only screen and (min-width: 1400px) {
+	.container {
+		width: 40%;
+	}
+}
+@media only screen and (max-width: 730px) {
+	.container {
+		width: 400px;
+	}
+}
+@media only screen and (max-width: 580px) {
+	.container {
+		width: 80%;
+	}
+}
+
+
+/* //////////////////////////////////////////////////////// */
+
+
+.banner_wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('../img/banner.jpg'); 
+	width: 100%;
+	height: 270px;
+	z-index: -10;
+}
+header {
+	margin-top: 50px;
+}
+.header__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header h3{
+	color: #fff;
+	font-weight: 800;
+	font-size: 20px;
+	letter-spacing: 18px;
+}
+
+
+
+
+
+.todo {
+}
+.container {
+}
+.todo__content {
+	margin-top: 30px;
+	width: 100%;
+}
+.todo__input {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #25273C;
+}
+.todo__input-item {
+	background: #25273C;
+	border: 0;
+	width: 100%;
+	height: 54px;
+	padding-left: 46px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	color: #85879d; /* #b7b9d2 */ 
+	font-size: 16px;
+}
+.todo__input-submit {
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	padding: 0 24px;
+}
+.todo__input-submit img {
+	width: 16px;
+    margin-top: 6px;
+}
+.todo__list {
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	margin-top: 30px;
+}
+.todo__list-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	background: #25273C;
+	border: 0;
+	width: 100%;
+	height: 60px;
+	font-size: 14px;
+}
+.todo__list-item:after {
+	content: "";
+	background: #36384d;
+	height: 1px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.todo__list-item p {
+	color: #b7b9d2;
+}
+.todo__list-item input {
+	margin: 0 24px;
+	width: 24px;
+}
+.todo__list-item img {
+	position: absolute;
+	right: 22px;
+	cursor: pointer;
+}

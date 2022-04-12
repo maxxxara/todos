@@ -2,11 +2,58 @@
 <html>
 <head>
 <title>Todos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+<script type="text/javascript" src="js/beforeLoad.js"></script>
 </head>
 <body>
 
+<div class="banner_wrapper">
+</div>
+
+<header>
+	<div class="container">
+		<div class="header__content">
+			<div class="logo">
+				<h3>LOGO</h3>
+			</div>
+			<div class="l_mode">
+				<img src="img/icon-moon.svg">
+			</div>
+		</div>
+	</div>
+</header>
+
+
+<content class="todo">
+	<div class="container">
+		<div class="todo__content">
+			<!-- <form> -->
+				<div class="todo__input">
+					<input type="text" id="input" class="todo__input-item">
+					<button id="submitBtn" class="todo__input-submit" type="todo__input-submit">
+						<img src="img/icon-check.svg">
+					</button>
+				</div>
+			<!-- </form> -->
+			<div id="todoList" class="todo__list">
+
+				<script type="text/javascript">
+					if (info.length > 0) {
+						info.forEach(function(elem) {
+							newItem(elem.title, elem.id, elem.checked);
+						})
+					}
+				</script>
+			</div>
+		</div>
+	</div>
+</content>
 
 
 <script type="text/javascript" src="js/script.js"></script>
