@@ -4,6 +4,13 @@
 
 window.onload = function() {
 	init();
+	for(var i = 0; i < info.length; i++) {
+		if (info[i] == null) {
+			info.splice(i, 1);
+		};
+	}
+	var localInfo = JSON.stringify(info);
+	localStorage.setItem("info", localInfo);
 };
 
 
@@ -13,7 +20,7 @@ function init() {
 	var todoList = document.getElementById("todoList");
 	var removeBtn = document.getElementById("removeBtn");
 	submitBtn.onclick = function() {
-		if (info.length > 0) {
+		if (info.length > 0 && info[info.length-1] !== null && info[info.length-1] !== undefined ) {
 			var lastId = info[info.length - 1].id;
 		} else {
 			var lastId = 0;

@@ -46,7 +46,9 @@
 				<script type="text/javascript">
 					if (info.length > 0) {
 						info.forEach(function(elem) {
-							newItem(elem.title, elem.id, elem.checked);
+							if (elem !== null) {
+								newItem(elem.title, elem.id, elem.checked);
+							}
 						})
 					}
 				</script>

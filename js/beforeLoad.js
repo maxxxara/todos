@@ -31,4 +31,14 @@ function newItem(val, id, checked) {
 function removeElem(id) {
 	var el = document.querySelector('[elem_id="' +  id + '"]');
 	el.remove();
+	for(var i = 0; i<info.length; i++) {
+		if (info[i] !== undefined && info[i] !== null) {
+			if (info[i].id == id) {
+				console.log(info[i]);
+				info[i] = undefined;
+				var localInfo = JSON.stringify(info);
+				localStorage.setItem("info", localInfo);
+			}
+		}	
+	}
 }
