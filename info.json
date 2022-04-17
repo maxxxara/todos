@@ -1,12 +1,22 @@
 [
 	{
-		"id" : 1,
-		"title": "Text 1 welcome",
-		"checked": true
+		"id": 1,
+		"name": "david",
+		"cat": 3
 	},
 	{
-		"id" : 2,
-		"title": "Text 2",
-		"checked": true
+		"id": 2,
+		"name": "nick",
+		"cat": 2
+	},
+	{
+		"id": 3,
+		"name": "george",
+		"cat": 1
+	},
+	{
+		"id": 4,
+		"name": "seraph",
+		"cat": 1
 	}
-];
+]
